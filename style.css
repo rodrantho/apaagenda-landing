@@ -553,6 +553,24 @@ img { max-width: 100%; display: block; }
 
 /* ─── PRICING ───────────────────────────────────────────────────────────────── */
 .pricing { background: #fff; }
+
+.trial-banner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(90deg, #f0fdf4, #dcfce7);
+  border: 1px solid #86efac;
+  border-radius: 12px;
+  padding: 16px 24px;
+  margin-bottom: 40px;
+  max-width: 720px;
+  margin-inline: auto;
+  margin-bottom: 40px;
+}
+.trial-icon { font-size: 28px; flex-shrink: 0; }
+.trial-banner strong { display: block; font-size: 15px; color: #15803d; font-weight: 700; margin-bottom: 2px; }
+.trial-banner span { font-size: 13px; color: #16a34a; }
+
 .pricing__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
