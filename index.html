@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apa! Agenda — Tu agenda online, lista en minutos</title>
+  <meta name="description" content="Sistema de reservas online para salones, clínicas, estudios y más. Widget embeddable, notificaciones por Telegram y email, pagos integrados." />
+  <meta property="og:title" content="Apa! Agenda" />
+  <meta property="og:description" content="Tu agenda online, lista en minutos. Para negocios de salud, belleza, educación y más." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────────────────────────────────────── -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="/" class="nav__logo">
+        <span class="logo-icon">📅</span>
+        <span>Apa! <strong>Agenda</strong></span>
+      </a>
+      <nav class="nav__links">
+        <a href="#features">Funcionalidades</a>
+        <a href="#how">Cómo funciona</a>
+        <a href="#pricing">Precios</a>
+      </nav>
+      <div class="nav__ctas">
+        <a href="https://appagenda.rodrantho.com/login" class="btn btn--ghost">Iniciar sesión</a>
+        <a href="https://appagenda.rodrantho.com/register" class="btn btn--primary">Empezar gratis</a>
+      </div>
+      <button class="nav__burger" id="burger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobile-menu">
+      <a href="#features">Funcionalidades</a>
+      <a href="#how">Cómo funciona</a>
+      <a href="#pricing">Precios</a>
+      <a href="https://appagenda.rodrantho.com/login" class="btn btn--ghost">Iniciar sesión</a>
+      <a href="https://appagenda.rodrantho.com/register" class="btn btn--primary">Empezar gratis</a>
+    </div>
+  </header>
+
+  <!-- ─── HERO ─────────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <div class="badge">✨ 100% gratis para empezar</div>
+        <h1>Tu agenda online,<br /><span class="gradient-text">lista en minutos</span></h1>
+        <p class="hero__sub">
+          Permitile a tus clientes reservar turnos desde tu web, Instagram o WhatsApp.
+          Sin llamadas, sin papeles, sin complicaciones.
+        </p>
+        <div class="hero__actions">
+          <a href="https://appagenda.rodrantho.com/register" class="btn btn--primary btn--lg">
+            Crear mi agenda gratis →
+          </a>
+          <a href="#how" class="btn btn--ghost btn--lg">Ver cómo funciona</a>
+        </div>
+        <p class="hero__note">Sin tarjeta de crédito · Listo en 5 minutos · Cancelá cuando quieras</p>
+      </div>
+      <div class="hero__visual">
+        <div class="widget-preview">
+          <div class="widget-preview__bar">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="widget-preview__header">
+            <div class="wp-avatar">E</div>
+            <div>
+              <div class="wp-name">Estudio Edantis</div>
+              <div class="wp-sub">Reservar turno</div>
+            </div>
+          </div>
+          <div class="widget-preview__services">
+            <div class="service-card service-card--active">
+              <span class="service-icon">✂️</span>
+              <div>
+                <div class="service-name">Consultoría</div>
+                <div class="service-meta">60 min · $5.000</div>
+              </div>
+              <span class="service-check">✓</span>
+            </div>
+            <div class="service-card">
+              <span class="service-icon">💻</span>
+              <div>
+                <div class="service-name">Auditoría web</div>
+                <div class="service-meta">90 min · $8.000</div>
+              </div>
+            </div>
+            <div class="service-card">
+              <span class="service-icon">📊</span>
+              <div>
+                <div class="service-name">Estrategia digital</div>
+                <div class="service-meta">45 min · $3.500</div>
+              </div>
+            </div>
+          </div>
+          <div class="widget-preview__btn">Siguiente →</div>
+          <div class="widget-preview__steps">
+            <span class="step active"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+          </div>
+        </div>
+        <div class="floating-notif floating-notif--1">
+          <span>📅</span>
+          <div>
+            <strong>Nueva reserva</strong>
+            <span>Juan · Consultoría · Mañana 10hs</span>
+          </div>
+        </div>
+        <div class="floating-notif floating-notif--2">
+          <span>✅</span>
+          <div>
+            <strong>Pago recibido</strong>
+            <span>$5.000 — Mercado Pago</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__bg"></div>
+  </section>
+
+  <!-- ─── LOGOS / SOCIAL PROOF ─────────────────────────────────────────────── -->
+  <section class="social-proof">
+    <div class="container">
+      <p class="social-proof__label">Perfecto para negocios como</p>
+      <div class="industries">
+        <span>💇 Peluquerías</span>
+        <span>🏥 Clínicas</span>
+        <span>🧘 Centros de yoga</span>
+        <span>💼 Consultoras</span>
+        <span>🎓 Academias</span>
+        <span>💆 Spa & estética</span>
+        <span>🦷 Odontologías</span>
+        <span>🏋️ Gimnasios</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEATURES ─────────────────────────────────────────────────────────── -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge--blue">Funcionalidades</div>
+        <h2>Todo lo que necesitás<br />para gestionar tus turnos</h2>
+        <p>Sin instalar nada. Sin configuraciones complejas. Funciona desde el día uno.</p>
+      </div>
+      <div class="features__grid">
+
+        <div class="feature-card">
+          <div class="feature-icon feature-icon--purple">🔗</div>
+          <h3>Link de reservas propio</h3>
+          <p>Compartí <code>apaagenda.com/tu-negocio</code> en tu bio de Instagram, WhatsApp o donde quieras. Tus clientes reservan directo, sin necesitar un sitio web.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon feature-icon--blue">🧩</div>
+          <h3>Widget para tu web</h3>
+          <p>Una línea de código y el formulario de reservas aparece en tu sitio. Compatible con cualquier CMS: WordPress, Wix, Webflow, HTML puro.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon feature-icon--green">✈️</div>
+          <h3>Notificaciones por Telegram</h3>
+          <p>Recibí un mensaje instantáneo en Telegram cada vez que llega una nueva reserva o cancelación. Sin depender del email.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon feature-icon--yellow">📧</div>
+          <h3>Emails automáticos</h3>
+          <p>Confirmación de reserva, recordatorio 24hs antes y aviso de cancelación. Todo automático, sin que tengas que hacer nada.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon feature-icon--red">💳</div>
+          <h3>Pagos online integrados</h3>
+          <p>Conectá tu cuenta de Stripe o MercadoPago. Tus clientes pagan al reservar, vos recibís el dinero directo en tu cuenta.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon feature-icon--teal">👥</div>
+          <h3>Multi-profesional</h3>
+          <p>Gestioná varios profesionales con horarios y servicios diferentes. Cada uno recibe sus propias notificaciones.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon feature-icon--orange">📅</div>
+          <h3>Vista de calendario</h3>
+          <p>Visualizá todos tus turnos en un calendario semanal. Filtrá por profesional, exportá a CSV o bloqueá horarios con un clic.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon feature-icon--pink">🎨</div>
+          <h3>Tu marca, tu identidad</h3>
+          <p>Personalizá el color principal y el logo. El widget y la página de reservas se adaptan a la identidad visual de tu negocio.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── HOW IT WORKS ─────────────────────────────────────────────────────── -->
+  <section class="how section" id="how">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge--green">Cómo funciona</div>
+        <h2>Empezá a recibir turnos<br />en menos de 5 minutos</h2>
+      </div>
+      <div class="steps">
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Creá tu cuenta</h3>
+            <p>Registrá tu negocio con nombre, rubro y zona horaria. Sin tarjeta de crédito, sin compromisos.</p>
+          </div>
+        </div>
+        <div class="step-divider"></div>
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Cargá tus servicios y horarios</h3>
+            <p>Agregá tus servicios con duración y precio opcional. Configurá los días y horarios disponibles para cada profesional.</p>
+          </div>
+        </div>
+        <div class="step-divider"></div>
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Compartí tu link</h3>
+            <p>Copiá tu link personal y compartilo donde quieras. O pegá el widget en tu web. Tus clientes ya pueden reservar.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-box">
+        <div class="demo-box__text">
+          <h3>¿Querés verlo en acción?</h3>
+          <p>Probá el formulario de reservas de demo. Así es exactamente lo que van a ver tus clientes.</p>
+          <a href="https://appagenda.rodrantho.com/b/edantis" target="_blank" rel="noopener" class="btn btn--primary">
+            Ver demo en vivo →
+          </a>
+        </div>
+        <div class="demo-box__img">
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <div class="phone-header">Reservar turno</div>
+              <div class="phone-service">✂️ Consultoría — 60 min</div>
+              <div class="phone-slots">
+                <span class="slot">09:00</span>
+                <span class="slot slot--active">10:00</span>
+                <span class="slot">11:00</span>
+                <span class="slot">14:00</span>
+                <span class="slot">15:00</span>
+                <span class="slot">16:00</span>
+              </div>
+              <div class="phone-btn">Confirmar →</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRICING ───────────────────────────────────────────────────────────── -->
+  <section class="pricing section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge--purple">Precios</div>
+        <h2>Empezá gratis,<br />crecé cuando estés listo</h2>
+        <p>Sin costos sorpresa. Sin comisiones por reserva. Pagás solo si querés más.</p>
+      </div>
+      <div class="pricing__grid">
+
+        <div class="plan-card">
+          <div class="plan-name">Gratis</div>
+          <div class="plan-price"><span class="plan-amount">$0</span><span class="plan-period">/ mes</span></div>
+          <p class="plan-desc">Para empezar a gestionar tus turnos sin invertir nada.</p>
+          <ul class="plan-features">
+            <li>✓ 1 profesional</li>
+            <li>✓ Servicios ilimitados</li>
+            <li>✓ Link de reservas propio</li>
+            <li>✓ Widget embeddable</li>
+            <li>✓ Email de confirmación</li>
+            <li>✓ Panel de administración</li>
+          </ul>
+          <a href="https://appagenda.rodrantho.com/register" class="btn btn--outline btn--full">Empezar gratis</a>
+        </div>
+
+        <div class="plan-card plan-card--featured">
+          <div class="plan-badge">Más popular</div>
+          <div class="plan-name">Pro</div>
+          <div class="plan-price"><span class="plan-amount">$12</span><span class="plan-period">USD / mes</span></div>
+          <p class="plan-desc">Para negocios que quieren automatizar al máximo.</p>
+          <ul class="plan-features">
+            <li>✓ Todo del plan Gratis</li>
+            <li>✓ Profesionales ilimitados</li>
+            <li>✓ Notificaciones por Telegram</li>
+            <li>✓ Recordatorio automático 24hs</li>
+            <li>✓ Pagos con Stripe / MercadoPago</li>
+            <li>✓ Vista de calendario</li>
+            <li>✓ Exportar a CSV</li>
+            <li>✓ Política de cancelación</li>
+          </ul>
+          <a href="https://appagenda.rodrantho.com/register" class="btn btn--primary btn--full">Empezar gratis 14 días →</a>
+          <p style="font-size:12px;text-align:center;margin-top:12px;color:#94a3b8;">Sin tarjeta de crédito</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA FINAL ────────────────────────────────────────────────────────── -->
+  <section class="cta-section section">
+    <div class="container">
+      <div class="cta-box">
+        <h2>¿Listo para empezar?</h2>
+        <p>Creá tu cuenta en 2 minutos y empezá a recibir reservas hoy mismo.</p>
+        <a href="https://appagenda.rodrantho.com/register" class="btn btn--white btn--lg">
+          Crear mi agenda gratis →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ───────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="/" class="nav__logo">
+          <span class="logo-icon">📅</span>
+          <span>Apa! <strong>Agenda</strong></span>
+        </a>
+        <p>Sistema de reservas online para negocios de LATAM.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Producto</h4>
+          <a href="#features">Funcionalidades</a>
+          <a href="#pricing">Precios</a>
+          <a href="https://appagenda.rodrantho.com/register">Registrarse</a>
+          <a href="https://appagenda.rodrantho.com/login">Iniciar sesión</a>
+        </div>
+        <div class="footer__col">
+          <h4>Recursos</h4>
+          <a href="#how">Cómo funciona</a>
+          <a href="https://appagenda.rodrantho.com/b/edantis" target="_blank" rel="noopener">Ver demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>© 2025 Apa! Agenda. Todos los derechos reservados.</span>
+        <span>
+          Desarrollado por
+          <a href="https://edantis.rodrantho.com" target="_blank" rel="noopener">Grupo Edantis</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
