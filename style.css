@@ -240,6 +240,17 @@ img { max-width: 100%; display: block; }
   font-size: 13px;
   color: var(--color-subtle);
 }
+.hero__login {
+  font-size: 14px;
+  color: var(--color-subtle);
+  margin-top: 4px;
+}
+.hero__login a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+.hero__login a:hover { text-decoration: underline; }
 
 /* Widget preview mockup */
 .hero__visual {
